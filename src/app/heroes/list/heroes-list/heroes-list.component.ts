@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-heroes-list',
   templateUrl: './heroes-list.component.html',
   styleUrl: './heroes-list.component.css',
+  standalone: false,
 })
 export class HeroesListComponent {
   private allHeroes: string[] = [

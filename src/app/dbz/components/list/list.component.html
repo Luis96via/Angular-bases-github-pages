@@ -1,0 +1,32 @@
+<ul class="list-group-item aling-items-center" >
+    <li
+class="list-group-item d-flex justify-content-between aling-items-center"
+[ngClass]="{
+  'list-group-item-success': isFirst,
+  'list-group-item-primary': isLast
+  }"
+    *ngFor=" let character of characterList;
+     let item = index;
+     let isFirst = first;
+     let isLast = last;
+     let isEven = even;
+     let isOdd = odd;
+     "
+     >
+
+ <div>
+      <span class="text-primary">{{ item }} </span>
+      <span>{{character.name}} - </span>
+      <strong>Power: </strong>
+      <span>{{character.power}}</span>
+<!--
+<span> Es el primero: {{ isFirst }}</span>
+      <span> Es Par: {{ isEven}} </span>
+      <span> Es el ultimo: {{ isLast }}</span>
+     -->
+ </div>
+
+     <button class="btn btn-danger" (click)="onDeleteCharacter(item)">x</button>
+</li>
+
+</ul>

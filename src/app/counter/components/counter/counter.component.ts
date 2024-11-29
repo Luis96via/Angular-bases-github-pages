@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
     <button (click)="decreaseBy(1)">-1</button>
 
     <hr />`,
+  standalone: false,
 })
 export class CounterComponent {
   // Implementar lógica del componente aquí

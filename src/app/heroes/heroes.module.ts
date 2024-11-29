@@ -16,3 +16,4 @@ import { HeroesListComponent } from './list/heroes-list/heroes-list.component';
   imports: [CommonModule]
 })
 export class HeroesModule{}
+
